@@ -1,0 +1,38 @@
+<div class  ="container container-login">
+    <!--Logo container-->
+    <div class="logo col-12 pt-3 ">
+      <img alt="logo-bank" class="rounded mx-auto d-block " src="../../assets/logo-banco-2.png">
+    </div>
+  
+    <!--inputs container-->
+    <form>
+      <div class="form-group">
+        <!--user input-->
+        <div class="col-12 mt-3 mb-3 ">
+          <label>User:</label>
+          <input class ="form-control" type="text"  name="first"[(ngModel)]="name" #ctrl="ngModel" >
+        </div>
+
+        <!--Password input-->
+        <div class="col-12 mb-3">
+          <label>Pass:</label>
+          <input  class ="form-control" type="number" name="pass" >
+        </div>
+      </div>
+  
+      <!--button  send-->
+      <div class="row">
+        <div class="col-4"></div>
+        <div class="col-4"></div>
+        <div class="col-4">
+          <button  type="button" class="btn btn-outline-light" (click) ="save()"[routerLink]="['/detail']" >Send</button>
+        </div>
+      </div>
+    </form>
+  
+    <!--background image-->
+    <div class="container text-center">
+      <img alt="image" class="rounded img-fluid mt-3" src="../assets/bank-oficina-2.jpg">
+    </div>
+  
+  </div>

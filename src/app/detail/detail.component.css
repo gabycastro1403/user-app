@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+
+.user-name{
+    background-color: #1B4F72;
+    color: aliceblue;
+    height: 10vh;
+}
+.container-detail{
+    background-color: #5DADE2;
+    color: aliceblue;
+    font-family: 'Roboto', sans-serif;
+}
+.title-transactions{
+    color: #1B4F72;
+    font-size: 1.2rem;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+.detail{
+    border-bottom:#6c757d 1px solid;
+}

@@ -1,0 +1,30 @@
+<div class="container container-detail">
+    <div class="row">
+        <div class="col-12 user-name text-center pt-3">
+            <!--title user name-->
+            <span>{{user}}</span>
+        </div>
+    </div>
+    <!--Listado de transacciones-->
+    <div class="row">
+        <!--title transactions-->
+        <div class="col-12 text-center">
+            <span class="title-transactions mb-3"> Transacciones Autorizadas :</span>
+        </div>
+        <!--cards of transaction-->
+        <div *ngFor="let item of transactionsResponse">
+            <div class="row m-3 border border-secondary rounded">
+                    <div class="col-12 detail">
+                        <span >ID: {{item.id}}</span>
+                    </div>
+                    <div class="col-12 detail">
+                        <span>Desc : {{item.description}}</span>
+                    </div>
+                    <div class="col-12 detail">
+                        <span>Cantidad : {{item.amount}}</span>
+                    </div>
+                    <div class="col-12 ">Status : {{item.status}}</div>
+            </div>
+        </div>
+    </div>
+</div>
