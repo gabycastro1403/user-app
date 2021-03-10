@@ -7,3 +7,11 @@
 .brand{
     color:aliceblue;
 }
+
+@media(min-width: 960px){
+
+    .container-footer{
+        height: 15vh;
+    }
+   
+}

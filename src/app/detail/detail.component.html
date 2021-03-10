@@ -1,12 +1,17 @@
 <div class="container container-detail">
     <div class="row">
-        <div class="col-12 user-name text-center pt-3">
+        <div class="col-12 col-lg-4 user-name text-center pt-3">
             <!--title user name-->
-            <span>{{user}}</span>
+            <span *ngIf = "!largeScreen">{{user}}</span>
+            <span *ngIf = "largeScreen" > Bienvenido : {{user}}</span>
+        </div>
+
+        <div class="col-lg-8 "  *ngIf = "largeScreen">
+            <img alt="log-bank " class="logo-bank rounded  d-block" src="../../assets/logo-banco-2.png">
         </div>
     </div>
     <!--Listado de transacciones-->
-    <div class="row">
+    <div class="row container-transactions">
         <!--title transactions-->
         <div class="col-12 text-center">
             <span class="title-transactions mb-3"> Transacciones Autorizadas :</span>
@@ -14,16 +19,18 @@
         <!--cards of transaction-->
         <div *ngFor="let item of transactionsResponse">
             <div class="row m-3 border border-secondary rounded">
-                    <div class="col-12 detail">
+                    <div class="col-12 col-lg-6 detail">
                         <span >ID: {{item.id}}</span>
                     </div>
-                    <div class="col-12 detail">
+                    <div class="col-12 col-lg-6 detail">
                         <span>Desc : {{item.description}}</span>
                     </div>
-                    <div class="col-12 detail">
+                    <div class="col-12 col-lg-6 detail">
                         <span>Cantidad : {{item.amount}}</span>
                     </div>
-                    <div class="col-12 ">Status : {{item.status}}</div>
+                    <div class="col-12 col-lg-6 ">
+                        <span>Status : {{item.status}}</span>
+                    </div>
             </div>
         </div>
     </div>

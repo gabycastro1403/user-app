@@ -7,3 +7,15 @@
     color: aliceblue;
     font-family: 'Roboto', sans-serif;
 }
+.logo-bank{
+    margin-right: auto;
+    margin-left: auto;
+}
+
+@media (min-width: 960px){
+
+    .logo-bank{
+        margin-right: 0% !important;
+    }
+    
+}

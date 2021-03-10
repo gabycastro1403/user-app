@@ -7,12 +7,16 @@ import { TransactionsService } from '../services/transactions.service'
 })
 export class LoginComponent implements OnInit {
   name:string = '';
+  largeScreen :boolean = false;
 
   constructor(private _transactionsService : TransactionsService) {
     
    }
 
   ngOnInit(): void {
+    const widthScreen = screen.width;
+    this.largeScreen =  widthScreen > 965? true : false;
+    console.log('largeScreen login', this.largeScreen);
   }
 
   save(){

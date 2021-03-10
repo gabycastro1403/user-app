@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 
+
 @Injectable({
   providedIn: 'root'
 })
@@ -36,6 +37,11 @@ export class TransactionsService {
     return new Promise((resolve) => {
       resolve(this.transactions);
     })
+    //uncomment this lines to test case reject
+    /*return new Promise((resolve,reject) => {
+      reject({status:400});
+      reject({status:422});
+    })*/
   }
 
   getUser(name:string){

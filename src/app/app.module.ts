@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms'
+import { SweetAlert2Module } from '@sweetalert2/ngx-sweetalert2';
 
 
 
@@ -26,7 +27,8 @@ import { LoginComponent } from './login/login.component';
   imports: [
     BrowserModule,
     app_routing,
-    FormsModule
+    FormsModule,
+    SweetAlert2Module
     
   ],
   providers: [
