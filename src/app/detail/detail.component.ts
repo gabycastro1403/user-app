@@ -22,7 +22,6 @@ export class DetailComponent implements OnInit {
 
     this._transactionsService.getTransactions()
     .then((response:any)=>{
-      console.log('response',response)
       this.transactionsResponse = response.transactions;
     }).catch((error:any)=>{
       if(error.status === 400){

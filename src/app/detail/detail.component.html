@@ -2,11 +2,11 @@
     <div class="row">
         <div class="col-12 col-lg-4 user-name text-center pt-3">
             <!--title user name-->
-            <span *ngIf = "!largeScreen">{{user}}</span>
-            <span *ngIf = "largeScreen" > Bienvenido : {{user}}</span>
+            <span class="user-small">{{user}}</span>
+            <span class="user-large"> Bienvenido : {{user}}</span>
         </div>
 
-        <div class="col-lg-8 "  *ngIf = "largeScreen">
+        <div class="col-lg-8  logo-large">
             <img alt="log-bank " class="logo-bank rounded  d-block" src="../../assets/logo-banco-2.png">
         </div>
     </div>

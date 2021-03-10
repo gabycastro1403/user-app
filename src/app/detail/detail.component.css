@@ -20,6 +20,12 @@
 .detail{
     border-bottom:#6c757d 1px solid;
 }
+.user-large{
+    display: none;
+}
+.logo-large{
+    display: none;
+}
 
 @media (min-width: 960px){
 
@@ -38,11 +44,21 @@
     .container-transactions{
         padding-bottom: 3%;
         padding-top: 3%;
-        border:#1B4F72 1px solid ;
+        border:#1B4F72 1.5px solid ;
+        width: 90%;
+        margin-left: 5%;
     }
     .logo-bank{
         margin-right: 0% !important;
         margin-left: auto;
     }
-
+    .user-small{
+        display: none;
+    }
+    .user-large{
+        display: inline;
+    }
+    .logo-large{
+        display: inline;
+    }
 }

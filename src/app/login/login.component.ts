@@ -16,7 +16,6 @@ export class LoginComponent implements OnInit {
   ngOnInit(): void {
     const widthScreen = screen.width;
     this.largeScreen =  widthScreen > 965? true : false;
-    console.log('largeScreen login', this.largeScreen);
   }
 
   save(){

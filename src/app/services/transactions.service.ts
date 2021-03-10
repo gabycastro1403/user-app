@@ -39,7 +39,7 @@ export class TransactionsService {
     })
     //uncomment this lines to test case reject
     /*return new Promise((resolve,reject) => {
-      reject({status:400});
+      //reject({status:400});
       reject({status:422});
     })*/
   }

@@ -1,39 +1,45 @@
 <div class  ="container container-login" >
   <div class="row">
-    <!--Logo container-->
-    <div class="logo col-12 pt-3 col-lg-12">
+    <div class="logo col-12 pt-3 col-lg-6 small-logo">
       <img alt="logo-bank" class="logo-bank rounded  d-block " src="../../assets/logo-banco-2.png">
     </div>
-  
+    
     <!--inputs container-->
-    <form class="col-lg-6">
-      <div class="form-group">
+    <form class="col-lg-6 form-content">
+
+      <div class="form-group ">
         <!--user input-->
-        <div class="col-12 mt-3 mb-3 ">
+        <div class="col-12 col-lg-9 mt-3 mb-3 ">
           <label>User:</label>
           <input class ="form-control" type="text"  name="first"[(ngModel)]="name" #ctrl="ngModel" >
         </div>
 
         <!--Password input-->
-        <div class="col-12 mb-3">
+        <div class="col-12 col-lg-9 mb-3">
           <label>Pass:</label>
-          <input  class ="form-control" type="number" name="pass" >
+          <input  class ="form-control" type="password" name="pass" >
         </div>
       </div>
   
       <!--button  send-->
       <div class="row">
-        <div class="col-4"></div>
-        <div class="col-4"></div>
-        <div class="col-4">
+        <div class="col-4 col-lg-3"></div>
+        <div class="col-4 col-lg-3"></div>
+        <div class="col-4 col-lg-6">
           <button  type="button" class="btn btn-outline-light" (click) ="save()"[routerLink]="['/detail']" >Send</button>
         </div>
       </div>
+
     </form>
+
+      <!--Logo container-->
+      <div class="logo col-12 pt-3 col-lg-6 large-logo">
+        <img alt="logo-bank" class="logo-bank rounded  d-block " src="../../assets/logo-banco-2.png">
+      </div>
     
   </div>
   
-    <div class="container text-center col-lg-12"  >
+    <div class="container text-center img-small" >
       <img alt="image" class="rounded img-fluid mt-3" src="../assets/bank-oficina-2.jpg">
     </div>
   
